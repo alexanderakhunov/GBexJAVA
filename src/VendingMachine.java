@@ -4,7 +4,6 @@ import java.util.List;
 
 public class VendingMachine {
     private LinkedList<Toys> toys;
-    private LinkedList<Toys> winToys;
     public void putToys(LinkedList<Toys>item){
         this.toys=item;
     }
@@ -12,6 +11,4 @@ public class VendingMachine {
         return toys.pollLast();
     }
 
-    public void putWinToys(LinkedList<Toys>winToys){this.toys=winToys;}
-    public Toys getWinToys(){return winToys.pollLast();}
 }
